@@ -2,6 +2,7 @@
 venv/
 .env/
 __pycache__/
+*.pyc
 
 # VS Code
 .vscode/
@@ -10,5 +11,5 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Data cache
-data/*.json
+# Keep data files - they are part of the automated system
+# Data files are version controlled for the automation

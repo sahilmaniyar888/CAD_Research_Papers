@@ -1,0 +1,133 @@
+{
+  "domains": [
+    {
+      "name": "CAD Geometry Core",
+      "description": "Core CAD geometry modeling, parametric design, feature-based modeling, BREP operations",
+      "keywords": ["CAD", "parametric", "feature-based", "BREP", "solid modeling", "geometric modeling"]
+    },
+    {
+      "name": "Computer Vision for Geometry",
+      "description": "Vision-based geometry understanding, image-to-CAD, 3D reconstruction from images",
+      "keywords": ["computer vision", "image to CAD", "3D reconstruction", "geometry recognition"]
+    },
+    {
+      "name": "Reinforcement Learning for Geometry",
+      "description": "RL-based CAD generation, geometric policy learning, sequential geometry construction",
+      "keywords": ["reinforcement learning", "RL", "policy", "agent", "sequential design"]
+    },
+    {
+      "name": "Diffusion Models for Geometry",
+      "description": "Diffusion-based generative models for CAD and geometric shapes",
+      "keywords": ["diffusion", "denoising", "score-based", "generative modeling"]
+    },
+    {
+      "name": "Multimodal Geometry Models",
+      "description": "Text-to-CAD, language-driven design, multimodal geometric generation",
+      "keywords": ["multimodal", "text to CAD", "language", "cross-modal"]
+    },
+    {
+      "name": "Graph-Based Geometry Learning",
+      "description": "Graph neural networks for CAD, feature graphs, topological learning",
+      "keywords": ["graph neural network", "GNN", "graph learning", "topology"]
+    },
+    {
+      "name": "Sketch / Constraint Understanding",
+      "description": "2D sketch understanding, constraint solving, sketch-based modeling",
+      "keywords": ["sketch", "constraint", "2D profile", "sketch recognition"]
+    },
+    {
+      "name": "Shape Representation Learning",
+      "description": "Learning geometric representations, shape encodings, latent geometry spaces",
+      "keywords": ["shape representation", "geometry encoding", "latent space"]
+    },
+    {
+      "name": "Other Geometry-CAD AI",
+      "description": "Other geometry-centric CAD AI research not fitting above categories",
+      "keywords": ["geometry", "CAD", "AI"]
+    }
+  ],
+  "techniques": [
+    {
+      "name": "Transformer",
+      "description": "Transformer architectures, attention mechanisms",
+      "keywords": ["transformer", "attention", "BERT", "GPT"]
+    },
+    {
+      "name": "GNN",
+      "description": "Graph Neural Networks for geometric structures",
+      "keywords": ["graph neural network", "GNN", "graph convolution", "GCN"]
+    },
+    {
+      "name": "Diffusion",
+      "description": "Diffusion models, denoising diffusion, score-based models",
+      "keywords": ["diffusion", "denoising", "score-based"]
+    },
+    {
+      "name": "RL",
+      "description": "Reinforcement Learning approaches",
+      "keywords": ["reinforcement learning", "RL", "policy", "Q-learning"]
+    },
+    {
+      "name": "CNN",
+      "description": "Convolutional Neural Networks",
+      "keywords": ["CNN", "convolutional", "ResNet", "UNet"]
+    },
+    {
+      "name": "VAE",
+      "description": "Variational Autoencoders",
+      "keywords": ["VAE", "variational autoencoder"]
+    },
+    {
+      "name": "Hybrid",
+      "description": "Hybrid and multi-technique approaches",
+      "keywords": ["hybrid", "multi-modal", "ensemble"]
+    },
+    {
+      "name": "Other",
+      "description": "Other machine learning techniques",
+      "keywords": []
+    }
+  ],
+  "representations": [
+    {
+      "name": "BREP",
+      "description": "Boundary Representation, solid models",
+      "keywords": ["BREP", "B-Rep", "boundary representation", "solid model"]
+    },
+    {
+      "name": "Sketch",
+      "description": "2D sketches, profiles, drawings",
+      "keywords": ["sketch", "drawing", "2D profile"]
+    },
+    {
+      "name": "Mesh",
+      "description": "Triangular meshes, polygon meshes",
+      "keywords": ["mesh", "triangular mesh", "polygon mesh"]
+    },
+    {
+      "name": "Point Cloud",
+      "description": "Point cloud representations",
+      "keywords": ["point cloud", "point set"]
+    },
+    {
+      "name": "Feature Graph",
+      "description": "Feature trees, CAD graphs, topological graphs",
+      "keywords": ["feature graph", "feature tree", "CAD graph", "topology"]
+    },
+    {
+      "name": "Voxel",
+      "description": "Volumetric voxel representations",
+      "keywords": ["voxel", "volumetric"]
+    },
+    {
+      "name": "Implicit",
+      "description": "Implicit representations, SDF, signed distance fields",
+      "keywords": ["implicit", "SDF", "signed distance"]
+    },
+    {
+      "name": "Other",
+      "description": "Other geometry representations",
+      "keywords": []
+    }
+  ]
+}

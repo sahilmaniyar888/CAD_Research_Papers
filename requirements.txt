@@ -1,0 +1,17 @@
+# CAD Research Papers - Automated System
+# All scripts use Python standard library only
+# No external dependencies required
+
+# Python 3.10+ required
+# Standard library modules used:
+# - json
+# - urllib
+# - pathlib
+# - xml.etree.ElementTree
+# - datetime
+# - typing
+# - collections
+
+# For future extensions (optional):
+# networkx>=3.0  # For advanced graph analysis
+# matplotlib>=3.7  # For visualization
