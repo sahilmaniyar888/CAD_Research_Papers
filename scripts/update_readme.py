@@ -55,34 +55,41 @@ def group_papers_by_domain(papers: List[Dict]) -> Dict[str, List[Dict]]:
 
 def format_paper_entry(paper: Dict) -> str:
     """
-    Format a single paper entry for README.
+    Format a single paper entry for README table row.
 
     Args:
         paper: Paper dictionary
 
     Returns:
-        Formatted markdown string
+        Formatted markdown table row
     """
     title = paper['title']
-    authors = ', '.join(paper['authors'][:3])  # Limit to first 3 authors
-    if len(paper['authors']) > 3:
-        authors += ' et al.'
-
     year = paper.get('year', paper['published_date'][:4])
-    citations = paper.get('citation_count', 0)
-    domain = paper.get('domain', 'Other')
-    techniques = ', '.join(paper.get('techniques', ['N/A']))
-    representations = ', '.join(paper.get('representations', ['N/A']))
-    pdf_link = paper['pdf_link']
+    venue = paper.get('venue', 'arXiv')
     arxiv_id = paper['arxiv_id']
 
-    entry = f"""- **{title}** ({year})
-  {authors}
-  Citations: {citations} | Techniques: {techniques} | Representations: {representations}
-  [[PDF]]({pdf_link}) [[arXiv]](https://arxiv.org/abs/{arxiv_id})
-"""
+    # Create paper link (use arXiv link)
+    arxiv_link = f"https://arxiv.org/abs/{arxiv_id}"
+    paper_cell = f"[{title}]({arxiv_link})"
 
-    return entry
+    # Create venue cell
+    venue_cell = f"{venue} {year}"
+
+    # Create links cell
+    links = []
+    pdf_link = paper['pdf_link']
+    links.append(f"[PDF]({pdf_link})")
+
+    # Add project/code links if available
+    if 'project_url' in paper and paper['project_url']:
+        links.append(f"[Project]({paper['project_url']})")
+    if 'code_url' in paper and paper['code_url']:
+        links.append(f"[Code]({paper['code_url']})")
+
+    links_cell = ' '.join(links)
+
+    # Return table row
+    return f"| {paper_cell} | {venue_cell} | {links_cell} |"
 
 
 def generate_readme(
@@ -102,7 +109,7 @@ def generate_readme(
         Complete README markdown string
     """
     # Header
-    readme = f"""# Awesome CAD AI - Geometry-Centric Research
+    readme = f"""# Awesome CAD AI 🎨
 
 ![Automated](https://img.shields.io/badge/status-automated-brightgreen)
 ![Papers](https://img.shields.io/badge/papers-{total_papers}-blue)
@@ -140,14 +147,16 @@ def generate_readme(
 
         readme += f"## {domain}\n\n"
         readme += f"*{domain_info['description']}*\n\n"
-        readme += f"**{len(papers)} papers**\n\n"
 
-        # Add papers
+        # Add table header
+        readme += "| Paper | Venue | Links |\n"
+        readme += "|-------|-------|-------|\n"
+
+        # Add papers as table rows
         for paper in papers:
-            readme += format_paper_entry(paper)
-            readme += "\n"
+            readme += format_paper_entry(paper) + "\n"
 
-        readme += "---\n\n"
+        readme += "\n---\n\n"
 
     # Footer
     readme += """## 🔧 System Architecture
