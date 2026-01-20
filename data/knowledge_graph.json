@@ -1,11 +1,1549 @@
 {
-  "nodes": [],
-  "edges": [],
+  "nodes": [
+    {
+      "id": "paper:2105.09492",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2105.09492",
+        "title": "DeepCAD: A Deep Generative Network for Computer-Aided Design Models",
+        "abstract": "We present a novel deep generative model for computer-aided design (CAD) models based on auto-regressive neural networks.",
+        "published_date": "2021-05-20",
+        "pdf_link": "https://arxiv.org/pdf/2105.09492.pdf",
+        "citation_count": 342,
+        "venue": "SIGGRAPH Asia",
+        "year": "2021"
+      }
+    },
+    {
+      "id": "author:Rundi_Wu",
+      "type": "author",
+      "properties": {
+        "name": "Rundi Wu"
+      }
+    },
+    {
+      "id": "author:Chang_Xiao",
+      "type": "author",
+      "properties": {
+        "name": "Chang Xiao"
+      }
+    },
+    {
+      "id": "author:Changxi_Zheng",
+      "type": "author",
+      "properties": {
+        "name": "Changxi Zheng"
+      }
+    },
+    {
+      "id": "domain:CAD_Geometry_Core",
+      "type": "domain",
+      "properties": {
+        "name": "CAD Geometry Core"
+      }
+    },
+    {
+      "id": "technique:Transformer",
+      "type": "technique",
+      "properties": {
+        "name": "Transformer"
+      }
+    },
+    {
+      "id": "technique:VAE",
+      "type": "technique",
+      "properties": {
+        "name": "VAE"
+      }
+    },
+    {
+      "id": "representation:BREP",
+      "type": "representation",
+      "properties": {
+        "name": "BREP"
+      }
+    },
+    {
+      "id": "representation:Sketch",
+      "type": "representation",
+      "properties": {
+        "name": "Sketch"
+      }
+    },
+    {
+      "id": "paper:2308.05739",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2308.05739",
+        "title": "SkexGen: Autoregressive Generation of CAD Construction Sequences with Disentangled Codebooks",
+        "abstract": "We present SkexGen, an autoregressive generative model for CAD construction sequences.",
+        "published_date": "2023-08-10",
+        "pdf_link": "https://arxiv.org/pdf/2308.05739.pdf",
+        "citation_count": 45,
+        "venue": "ICML",
+        "year": "2023"
+      }
+    },
+    {
+      "id": "author:Xiang_Xu",
+      "type": "author",
+      "properties": {
+        "name": "Xiang Xu"
+      }
+    },
+    {
+      "id": "author:Pradeep_Kumar_Jayaraman",
+      "type": "author",
+      "properties": {
+        "name": "Pradeep Kumar Jayaraman"
+      }
+    },
+    {
+      "id": "author:Joseph_Lambourne",
+      "type": "author",
+      "properties": {
+        "name": "Joseph Lambourne"
+      }
+    },
+    {
+      "id": "author:Karl_D.D._Willis",
+      "type": "author",
+      "properties": {
+        "name": "Karl D.D. Willis"
+      }
+    },
+    {
+      "id": "author:Yasutaka_Furukawa",
+      "type": "author",
+      "properties": {
+        "name": "Yasutaka Furukawa"
+      }
+    },
+    {
+      "id": "representation:Feature_Graph",
+      "type": "representation",
+      "properties": {
+        "name": "Feature Graph"
+      }
+    },
+    {
+      "id": "paper:2211.13768",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2211.13768",
+        "title": "Point-E: A System for Generating 3D Point Clouds from Complex Prompts",
+        "abstract": "We present Point-E, a system for generating colored point clouds from complex natural language prompts using diffusion models.",
+        "published_date": "2022-11-24",
+        "pdf_link": "https://arxiv.org/pdf/2211.13768.pdf",
+        "citation_count": 876,
+        "venue": "arXiv",
+        "year": "2022"
+      }
+    },
+    {
+      "id": "author:Alex_Nichol",
+      "type": "author",
+      "properties": {
+        "name": "Alex Nichol"
+      }
+    },
+    {
+      "id": "author:Heewoo_Jun",
+      "type": "author",
+      "properties": {
+        "name": "Heewoo Jun"
+      }
+    },
+    {
+      "id": "author:Prafulla_Dhariwal",
+      "type": "author",
+      "properties": {
+        "name": "Prafulla Dhariwal"
+      }
+    },
+    {
+      "id": "author:Pamela_Mishkin",
+      "type": "author",
+      "properties": {
+        "name": "Pamela Mishkin"
+      }
+    },
+    {
+      "id": "author:Mark_Chen",
+      "type": "author",
+      "properties": {
+        "name": "Mark Chen"
+      }
+    },
+    {
+      "id": "domain:Diffusion_Models_for_Geometry",
+      "type": "domain",
+      "properties": {
+        "name": "Diffusion Models for Geometry"
+      }
+    },
+    {
+      "id": "technique:Diffusion",
+      "type": "technique",
+      "properties": {
+        "name": "Diffusion"
+      }
+    },
+    {
+      "id": "representation:Point_Cloud",
+      "type": "representation",
+      "properties": {
+        "name": "Point Cloud"
+      }
+    },
+    {
+      "id": "paper:2305.02463",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2305.02463",
+        "title": "Shap-E: Generating Conditional 3D Implicit Functions",
+        "abstract": "We present Shap-E, a conditional generative model for 3D assets trained on a large dataset of 3D objects.",
+        "published_date": "2023-05-03",
+        "pdf_link": "https://arxiv.org/pdf/2305.02463.pdf",
+        "citation_count": 621,
+        "venue": "arXiv",
+        "year": "2023"
+      }
+    },
+    {
+      "id": "representation:Implicit",
+      "type": "representation",
+      "properties": {
+        "name": "Implicit"
+      }
+    },
+    {
+      "id": "paper:1809.02794",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "1809.02794",
+        "title": "Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings",
+        "abstract": "We present a method for generating colored 3D shapes from natural language descriptions.",
+        "published_date": "2018-09-08",
+        "pdf_link": "https://arxiv.org/pdf/1809.02794.pdf",
+        "citation_count": 458,
+        "venue": "ECCV",
+        "year": "2018"
+      }
+    },
+    {
+      "id": "author:Kevin_Chen",
+      "type": "author",
+      "properties": {
+        "name": "Kevin Chen"
+      }
+    },
+    {
+      "id": "author:Christopher_B._Choy",
+      "type": "author",
+      "properties": {
+        "name": "Christopher B. Choy"
+      }
+    },
+    {
+      "id": "author:Manolis_Savva",
+      "type": "author",
+      "properties": {
+        "name": "Manolis Savva"
+      }
+    },
+    {
+      "id": "author:Angel_X._Chang",
+      "type": "author",
+      "properties": {
+        "name": "Angel X. Chang"
+      }
+    },
+    {
+      "id": "author:Thomas_Funkhouser",
+      "type": "author",
+      "properties": {
+        "name": "Thomas Funkhouser"
+      }
+    },
+    {
+      "id": "author:Silvio_Savarese",
+      "type": "author",
+      "properties": {
+        "name": "Silvio Savarese"
+      }
+    },
+    {
+      "id": "domain:Multimodal_Geometry_Models",
+      "type": "domain",
+      "properties": {
+        "name": "Multimodal Geometry Models"
+      }
+    },
+    {
+      "id": "technique:CNN",
+      "type": "technique",
+      "properties": {
+        "name": "CNN"
+      }
+    },
+    {
+      "id": "technique:Hybrid",
+      "type": "technique",
+      "properties": {
+        "name": "Hybrid"
+      }
+    },
+    {
+      "id": "representation:Voxel",
+      "type": "representation",
+      "properties": {
+        "name": "Voxel"
+      }
+    },
+    {
+      "id": "paper:1912.03858",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "1912.03858",
+        "title": "StructureNet: Hierarchical Graph Networks for 3D Shape Generation",
+        "abstract": "We introduce StructureNet, a hierarchical graph network for learning structural relationships of 3D shapes.",
+        "published_date": "2019-12-09",
+        "pdf_link": "https://arxiv.org/pdf/1912.03858.pdf",
+        "citation_count": 721,
+        "venue": "SIGGRAPH Asia",
+        "year": "2019"
+      }
+    },
+    {
+      "id": "author:Kaichun_Mo",
+      "type": "author",
+      "properties": {
+        "name": "Kaichun Mo"
+      }
+    },
+    {
+      "id": "author:Paul_Guerrero",
+      "type": "author",
+      "properties": {
+        "name": "Paul Guerrero"
+      }
+    },
+    {
+      "id": "author:Li_Yi",
+      "type": "author",
+      "properties": {
+        "name": "Li Yi"
+      }
+    },
+    {
+      "id": "author:Hao_Su",
+      "type": "author",
+      "properties": {
+        "name": "Hao Su"
+      }
+    },
+    {
+      "id": "author:Peter_Wonka",
+      "type": "author",
+      "properties": {
+        "name": "Peter Wonka"
+      }
+    },
+    {
+      "id": "author:Niloy_Mitra",
+      "type": "author",
+      "properties": {
+        "name": "Niloy Mitra"
+      }
+    },
+    {
+      "id": "author:Leonidas_J._Guibas",
+      "type": "author",
+      "properties": {
+        "name": "Leonidas J. Guibas"
+      }
+    },
+    {
+      "id": "domain:Graph-Based_Geometry_Learning",
+      "type": "domain",
+      "properties": {
+        "name": "Graph-Based Geometry Learning"
+      }
+    },
+    {
+      "id": "technique:GNN",
+      "type": "technique",
+      "properties": {
+        "name": "GNN"
+      }
+    },
+    {
+      "id": "representation:Mesh",
+      "type": "representation",
+      "properties": {
+        "name": "Mesh"
+      }
+    },
+    {
+      "id": "paper:1911.10082",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "1911.10082",
+        "title": "PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding",
+        "abstract": "We present PartNet, a consistent, large-scale dataset of 3D objects annotated with fine-grained, instance-level, and hierarchical 3D part information.",
+        "published_date": "2019-11-22",
+        "pdf_link": "https://arxiv.org/pdf/1911.10082.pdf",
+        "citation_count": 1243,
+        "venue": "CVPR",
+        "year": "2019"
+      }
+    },
+    {
+      "id": "author:Shilin_Zhu",
+      "type": "author",
+      "properties": {
+        "name": "Shilin Zhu"
+      }
+    },
+    {
+      "id": "author:Subarna_Tripathi",
+      "type": "author",
+      "properties": {
+        "name": "Subarna Tripathi"
+      }
+    },
+    {
+      "id": "paper:2007.03983",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2007.03983",
+        "title": "CAPRI-Net: Learning Compact CAD Shapes with Adaptive Primitive Assembly",
+        "abstract": "We present CAPRI-Net, a self-supervised neural network that learns compact CAD shape representations via adaptive primitive assembly.",
+        "published_date": "2020-07-08",
+        "pdf_link": "https://arxiv.org/pdf/2007.03983.pdf",
+        "citation_count": 187,
+        "venue": "CVPR",
+        "year": "2020"
+      }
+    },
+    {
+      "id": "author:Fenggen_Yu",
+      "type": "author",
+      "properties": {
+        "name": "Fenggen Yu"
+      }
+    },
+    {
+      "id": "author:Kun_Liu",
+      "type": "author",
+      "properties": {
+        "name": "Kun Liu"
+      }
+    },
+    {
+      "id": "author:Yan_Zhang",
+      "type": "author",
+      "properties": {
+        "name": "Yan Zhang"
+      }
+    },
+    {
+      "id": "author:Chenyang_Zhu",
+      "type": "author",
+      "properties": {
+        "name": "Chenyang Zhu"
+      }
+    },
+    {
+      "id": "author:Kai_Xu",
+      "type": "author",
+      "properties": {
+        "name": "Kai Xu"
+      }
+    },
+    {
+      "id": "domain:Shape_Representation_Learning",
+      "type": "domain",
+      "properties": {
+        "name": "Shape Representation Learning"
+      }
+    },
+    {
+      "id": "paper:2003.13319",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2003.13319",
+        "title": "SketchGraphs: A Large-Scale Dataset for Modeling Relational Geometry in Computer-Aided Design",
+        "abstract": "We present SketchGraphs, a dataset of 15 million sketches extracted from real-world CAD models, represented as graphs.",
+        "published_date": "2020-03-30",
+        "pdf_link": "https://arxiv.org/pdf/2003.13319.pdf",
+        "citation_count": 234,
+        "venue": "arXiv",
+        "year": "2020"
+      }
+    },
+    {
+      "id": "author:Ari_Seff",
+      "type": "author",
+      "properties": {
+        "name": "Ari Seff"
+      }
+    },
+    {
+      "id": "author:Wenda_Zhou",
+      "type": "author",
+      "properties": {
+        "name": "Wenda Zhou"
+      }
+    },
+    {
+      "id": "author:Nick_Richardson",
+      "type": "author",
+      "properties": {
+        "name": "Nick Richardson"
+      }
+    },
+    {
+      "id": "author:Ryan_P._Adams",
+      "type": "author",
+      "properties": {
+        "name": "Ryan P. Adams"
+      }
+    },
+    {
+      "id": "domain:Sketch___Constraint_Understanding",
+      "type": "domain",
+      "properties": {
+        "name": "Sketch / Constraint Understanding"
+      }
+    },
+    {
+      "id": "paper:2210.05258",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2210.05258",
+        "title": "AutoMate: Specialist and Generalist Assembly Policies over Diverse Geometries",
+        "abstract": "We present AutoMate, a learning framework that trains both specialist and generalist visuomotor policies for robotic assembly over diverse 3D geometries.",
+        "published_date": "2022-10-11",
+        "pdf_link": "https://arxiv.org/pdf/2210.05258.pdf",
+        "citation_count": 89,
+        "venue": "CoRL",
+        "year": "2022"
+      }
+    },
+    {
+      "id": "author:Yulong_Li",
+      "type": "author",
+      "properties": {
+        "name": "Yulong Li"
+      }
+    },
+    {
+      "id": "author:Andy_Zeng",
+      "type": "author",
+      "properties": {
+        "name": "Andy Zeng"
+      }
+    },
+    {
+      "id": "author:Shuran_Song",
+      "type": "author",
+      "properties": {
+        "name": "Shuran Song"
+      }
+    },
+    {
+      "id": "domain:Reinforcement_Learning_for_Geometry",
+      "type": "domain",
+      "properties": {
+        "name": "Reinforcement Learning for Geometry"
+      }
+    },
+    {
+      "id": "technique:RL",
+      "type": "technique",
+      "properties": {
+        "name": "RL"
+      }
+    },
+    {
+      "id": "paper:2104.05652",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2104.05652",
+        "title": "Learning to Infer Semantic Parameters for 3D Shape Editing",
+        "abstract": "We present a learning framework to infer semantic parameters that enable intuitive 3D shape editing.",
+        "published_date": "2021-04-12",
+        "pdf_link": "https://arxiv.org/pdf/2104.05652.pdf",
+        "citation_count": 156,
+        "venue": "3DV",
+        "year": "2021"
+      }
+    },
+    {
+      "id": "author:Qimin_Chen",
+      "type": "author",
+      "properties": {
+        "name": "Qimin Chen"
+      }
+    },
+    {
+      "id": "author:Maham_Tanveer",
+      "type": "author",
+      "properties": {
+        "name": "Maham Tanveer"
+      }
+    },
+    {
+      "id": "author:Ali_Mahdavi-Amiri",
+      "type": "author",
+      "properties": {
+        "name": "Ali Mahdavi-Amiri"
+      }
+    },
+    {
+      "id": "author:Hao_Zhang",
+      "type": "author",
+      "properties": {
+        "name": "Hao Zhang"
+      }
+    },
+    {
+      "id": "paper:2206.08082",
+      "type": "paper",
+      "properties": {
+        "arxiv_id": "2206.08082",
+        "title": "CADTransformer: Panoptic Symbol Spotting Transformer for CAD Drawings",
+        "abstract": "We propose CADTransformer, a transformer-based framework for panoptic symbol spotting in CAD drawings.",
+        "published_date": "2022-06-16",
+        "pdf_link": "https://arxiv.org/pdf/2206.08082.pdf",
+        "citation_count": 67,
+        "venue": "CVPR",
+        "year": "2022"
+      }
+    },
+    {
+      "id": "author:Zhaohua_Zheng",
+      "type": "author",
+      "properties": {
+        "name": "Zhaohua Zheng"
+      }
+    },
+    {
+      "id": "author:Jianfang_Li",
+      "type": "author",
+      "properties": {
+        "name": "Jianfang Li"
+      }
+    },
+    {
+      "id": "author:Lingjie_Zhu",
+      "type": "author",
+      "properties": {
+        "name": "Lingjie Zhu"
+      }
+    },
+    {
+      "id": "author:Honghua_Li",
+      "type": "author",
+      "properties": {
+        "name": "Honghua Li"
+      }
+    },
+    {
+      "id": "author:Frank_Petzold",
+      "type": "author",
+      "properties": {
+        "name": "Frank Petzold"
+      }
+    },
+    {
+      "id": "author:Ping_Tan",
+      "type": "author",
+      "properties": {
+        "name": "Ping Tan"
+      }
+    },
+    {
+      "id": "domain:Computer_Vision_for_Geometry",
+      "type": "domain",
+      "properties": {
+        "name": "Computer Vision for Geometry"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "author:Rundi_Wu",
+      "target": "paper:2105.09492",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Chang_Xiao",
+      "target": "paper:2105.09492",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Changxi_Zheng",
+      "target": "paper:2105.09492",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2105.09492",
+      "target": "domain:CAD_Geometry_Core",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2105.09492",
+      "target": "technique:Transformer",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2105.09492",
+      "target": "technique:VAE",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2105.09492",
+      "target": "representation:BREP",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2105.09492",
+      "target": "representation:Sketch",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Xiang_Xu",
+      "target": "paper:2308.05739",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Pradeep_Kumar_Jayaraman",
+      "target": "paper:2308.05739",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Joseph_Lambourne",
+      "target": "paper:2308.05739",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Karl_D.D._Willis",
+      "target": "paper:2308.05739",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Yasutaka_Furukawa",
+      "target": "paper:2308.05739",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2308.05739",
+      "target": "domain:CAD_Geometry_Core",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2308.05739",
+      "target": "technique:Transformer",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2308.05739",
+      "target": "representation:Sketch",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2308.05739",
+      "target": "representation:Feature_Graph",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Alex_Nichol",
+      "target": "paper:2211.13768",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Heewoo_Jun",
+      "target": "paper:2211.13768",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Prafulla_Dhariwal",
+      "target": "paper:2211.13768",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Pamela_Mishkin",
+      "target": "paper:2211.13768",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Mark_Chen",
+      "target": "paper:2211.13768",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2211.13768",
+      "target": "domain:Diffusion_Models_for_Geometry",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2211.13768",
+      "target": "technique:Diffusion",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2211.13768",
+      "target": "representation:Point_Cloud",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Heewoo_Jun",
+      "target": "paper:2305.02463",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Alex_Nichol",
+      "target": "paper:2305.02463",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2305.02463",
+      "target": "domain:Diffusion_Models_for_Geometry",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2305.02463",
+      "target": "technique:Diffusion",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2305.02463",
+      "target": "technique:Transformer",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2305.02463",
+      "target": "representation:Implicit",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2305.02463",
+      "target": "representation:Point_Cloud",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Kevin_Chen",
+      "target": "paper:1809.02794",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Christopher_B._Choy",
+      "target": "paper:1809.02794",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Manolis_Savva",
+      "target": "paper:1809.02794",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Angel_X._Chang",
+      "target": "paper:1809.02794",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Thomas_Funkhouser",
+      "target": "paper:1809.02794",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Silvio_Savarese",
+      "target": "paper:1809.02794",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:1809.02794",
+      "target": "domain:Multimodal_Geometry_Models",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:1809.02794",
+      "target": "technique:CNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:1809.02794",
+      "target": "technique:Hybrid",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:1809.02794",
+      "target": "representation:Voxel",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:1809.02794",
+      "target": "representation:Point_Cloud",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Kaichun_Mo",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Paul_Guerrero",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Li_Yi",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Hao_Su",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Peter_Wonka",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Niloy_Mitra",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Leonidas_J._Guibas",
+      "target": "paper:1912.03858",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:1912.03858",
+      "target": "domain:Graph-Based_Geometry_Learning",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:1912.03858",
+      "target": "technique:GNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:1912.03858",
+      "target": "technique:VAE",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:1912.03858",
+      "target": "representation:Feature_Graph",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:1912.03858",
+      "target": "representation:Mesh",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Kaichun_Mo",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Shilin_Zhu",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Angel_X._Chang",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Li_Yi",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Subarna_Tripathi",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Leonidas_J._Guibas",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Hao_Su",
+      "target": "paper:1911.10082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:1911.10082",
+      "target": "domain:Graph-Based_Geometry_Learning",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:1911.10082",
+      "target": "technique:GNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:1911.10082",
+      "target": "representation:Feature_Graph",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:1911.10082",
+      "target": "representation:Mesh",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Fenggen_Yu",
+      "target": "paper:2007.03983",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Kun_Liu",
+      "target": "paper:2007.03983",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Yan_Zhang",
+      "target": "paper:2007.03983",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Chenyang_Zhu",
+      "target": "paper:2007.03983",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Kai_Xu",
+      "target": "paper:2007.03983",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2007.03983",
+      "target": "domain:Shape_Representation_Learning",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2007.03983",
+      "target": "technique:CNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2007.03983",
+      "target": "technique:Hybrid",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2007.03983",
+      "target": "representation:BREP",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2007.03983",
+      "target": "representation:Implicit",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Ari_Seff",
+      "target": "paper:2003.13319",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Wenda_Zhou",
+      "target": "paper:2003.13319",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Nick_Richardson",
+      "target": "paper:2003.13319",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Ryan_P._Adams",
+      "target": "paper:2003.13319",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2003.13319",
+      "target": "domain:Sketch___Constraint_Understanding",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2003.13319",
+      "target": "technique:GNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2003.13319",
+      "target": "technique:Transformer",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2003.13319",
+      "target": "representation:Sketch",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2003.13319",
+      "target": "representation:Feature_Graph",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Yulong_Li",
+      "target": "paper:2210.05258",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Andy_Zeng",
+      "target": "paper:2210.05258",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Shuran_Song",
+      "target": "paper:2210.05258",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2210.05258",
+      "target": "domain:Reinforcement_Learning_for_Geometry",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2210.05258",
+      "target": "technique:RL",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2210.05258",
+      "target": "technique:CNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2210.05258",
+      "target": "representation:Point_Cloud",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2210.05258",
+      "target": "representation:Mesh",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Fenggen_Yu",
+      "target": "paper:2104.05652",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Qimin_Chen",
+      "target": "paper:2104.05652",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Maham_Tanveer",
+      "target": "paper:2104.05652",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Ali_Mahdavi-Amiri",
+      "target": "paper:2104.05652",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Hao_Zhang",
+      "target": "paper:2104.05652",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2104.05652",
+      "target": "domain:Shape_Representation_Learning",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2104.05652",
+      "target": "technique:CNN",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2104.05652",
+      "target": "technique:Transformer",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2104.05652",
+      "target": "representation:Implicit",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2104.05652",
+      "target": "representation:Mesh",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "author:Zhaohua_Zheng",
+      "target": "paper:2206.08082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Jianfang_Li",
+      "target": "paper:2206.08082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Lingjie_Zhu",
+      "target": "paper:2206.08082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Honghua_Li",
+      "target": "paper:2206.08082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Frank_Petzold",
+      "target": "paper:2206.08082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "author:Ping_Tan",
+      "target": "paper:2206.08082",
+      "type": "authored",
+      "properties": {
+        "role": "author"
+      }
+    },
+    {
+      "source": "paper:2206.08082",
+      "target": "domain:Computer_Vision_for_Geometry",
+      "type": "belongs_to_domain",
+      "properties": {}
+    },
+    {
+      "source": "paper:2206.08082",
+      "target": "technique:Transformer",
+      "type": "uses_technique",
+      "properties": {}
+    },
+    {
+      "source": "paper:2206.08082",
+      "target": "representation:Sketch",
+      "type": "uses_representation",
+      "properties": {}
+    },
+    {
+      "source": "paper:2206.08082",
+      "target": "representation:BREP",
+      "type": "uses_representation",
+      "properties": {}
+    }
+  ],
   "metadata": {
-    "total_papers": 0,
-    "total_authors": 0,
-    "total_domains": 0,
-    "total_techniques": 0,
-    "total_representations": 0
+    "total_papers": 12,
+    "total_authors": 50,
+    "total_domains": 8,
+    "total_techniques": 7,
+    "total_representations": 7,
+    "top_authors": [
+      [
+        "Alex Nichol",
+        2
+      ],
+      [
+        "Heewoo Jun",
+        2
+      ],
+      [
+        "Angel X. Chang",
+        2
+      ],
+      [
+        "Kaichun Mo",
+        2
+      ],
+      [
+        "Li Yi",
+        2
+      ],
+      [
+        "Hao Su",
+        2
+      ],
+      [
+        "Leonidas J. Guibas",
+        2
+      ],
+      [
+        "Fenggen Yu",
+        2
+      ],
+      [
+        "Rundi Wu",
+        1
+      ],
+      [
+        "Chang Xiao",
+        1
+      ]
+    ],
+    "domain_distribution": {
+      "CAD Geometry Core": 2,
+      "Diffusion Models for Geometry": 2,
+      "Multimodal Geometry Models": 1,
+      "Graph-Based Geometry Learning": 2,
+      "Shape Representation Learning": 2,
+      "Sketch / Constraint Understanding": 1,
+      "Reinforcement Learning for Geometry": 1,
+      "Computer Vision for Geometry": 1
+    },
+    "technique_distribution": {
+      "Transformer": 6,
+      "VAE": 2,
+      "Diffusion": 2,
+      "CNN": 4,
+      "Hybrid": 2,
+      "GNN": 3,
+      "RL": 1
+    },
+    "representation_distribution": {
+      "BREP": 3,
+      "Sketch": 4,
+      "Feature Graph": 4,
+      "Point Cloud": 4,
+      "Implicit": 3,
+      "Voxel": 1,
+      "Mesh": 4
+    }
   }
 }
