@@ -41,31 +41,40 @@ jobs:
         run: |
           echo "Fetching papers from arXiv..."
           python scripts/fetch_arxiv.py
+          if [ $? -ne 0 ]; then echo "Failed to fetch papers"; exit 1; fi
 
       - name: Filter and classify papers
         run: |
           echo "Filtering and classifying papers..."
           python scripts/filter_and_classify.py
+          if [ $? -ne 0 ]; then echo "Failed to filter papers"; exit 1; fi
 
       - name: Enrich with citations
         run: |
           echo "Enriching papers with citation data..."
           python scripts/enrich_citations.py
+          if [ $? -ne 0 ]; then echo "Failed to enrich citations"; exit 1; fi
 
       - name: Build knowledge graph
         run: |
           echo "Building knowledge graph..."
           python scripts/build_knowledge_graph.py
+          if [ $? -ne 0 ]; then echo "Failed to build knowledge graph"; exit 1; fi
 
       - name: Update README
         run: |
           echo "Updating README..."
           python scripts/update_readme.py
+          if [ $? -ne 0 ]; then echo "Failed to update README"; exit 1; fi
 
       - name: Check for changes
         id: check_changes
         run: |
-          git diff --quiet data/ README.md || echo "changes=true" >> $GITHUB_OUTPUT
+          if git diff --exit-code --quiet data/ README.md; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Commit and push changes
         if: steps.check_changes.outputs.changes == 'true'
@@ -73,19 +82,17 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          git add data/
-          git add README.md
+          git add data/ README.md
 
-          # Create commit message with stats
-          COMMIT_MSG="Auto-update: $(date +'%Y-%m-%d')
+          # Create commit message with proper multi-line handling
+          COMMIT_DATE=$(date +'%Y-%m-%d')
+          git commit -m "Auto-update: $COMMIT_DATE
+          
+- Updated paper database
+- Refreshed knowledge graph
+- Regenerated README
 
-          - Updated paper database
-          - Refreshed knowledge graph
-          - Regenerated README
-
-          [skip ci]"
-
-          git commit -m "$COMMIT_MSG"
+[skip ci]"
           git push
 
       - name: Summary
