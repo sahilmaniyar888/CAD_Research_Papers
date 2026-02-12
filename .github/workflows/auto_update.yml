@@ -1,14 +1,9 @@
 name: Auto Update CAD Research Papers
 
 on:
-  # Run daily at 00:00 UTC
   schedule:
     - cron: '0 0 * * *'
-
-  # Allow manual trigger
   workflow_dispatch:
-
-  # Run on push to main (for testing)
   push:
     branches:
       - main
@@ -41,31 +36,26 @@ jobs:
         run: |
           echo "Fetching papers from arXiv..."
           python scripts/fetch_arxiv.py
-          if [ $? -ne 0 ]; then echo "Failed to fetch papers"; exit 1; fi
 
       - name: Filter and classify papers
         run: |
           echo "Filtering and classifying papers..."
           python scripts/filter_and_classify.py
-          if [ $? -ne 0 ]; then echo "Failed to filter papers"; exit 1; fi
 
       - name: Enrich with citations
         run: |
           echo "Enriching papers with citation data..."
           python scripts/enrich_citations.py
-          if [ $? -ne 0 ]; then echo "Failed to enrich citations"; exit 1; fi
 
       - name: Build knowledge graph
         run: |
           echo "Building knowledge graph..."
           python scripts/build_knowledge_graph.py
-          if [ $? -ne 0 ]; then echo "Failed to build knowledge graph"; exit 1; fi
 
       - name: Update README
         run: |
           echo "Updating README..."
           python scripts/update_readme.py
-          if [ $? -ne 0 ]; then echo "Failed to update README"; exit 1; fi
 
       - name: Check for changes
         id: check_changes
@@ -81,18 +71,20 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
-          git add data/ README.md
-
-          # Create commit message with proper multi-line handling
-          COMMIT_DATE=$(date +'%Y-%m-%d')
-          git commit -m "Auto-update: $COMMIT_DATE
           
+          git add data/ README.md
+          
+          cat > /tmp/commit_msg.txt << 'EOF'
+Auto-update: $(date +'%Y-%m-%d')
+
 - Updated paper database
 - Refreshed knowledge graph
 - Regenerated README
 
-[skip ci]"
+[skip ci]
+EOF
+          
+          git commit -F /tmp/commit_msg.txt
           git push
 
       - name: Summary
